@@ -2,13 +2,13 @@
 
 import Image from 'next/image';
 import { FaYoutube, FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
-import { ADLaM_Display } from 'next/font/google';
-
-const adlam = ADLaM_Display({ subsets: ['latin'], weight: '400' });
 
 export default function Page() {
   return (
-    <main className={`min-h-screen flex items-center justify-center bg-gray-100 p-6 ${adlam.className}`}>
+    <main
+      className="min-h-screen flex items-center justify-center bg-gray-100 p-6"
+      style={{ fontFamily: 'Arial, sans-serif' }}
+    >
       <section className="w-[350px] bg-white rounded-3xl shadow-xl p-4">
         <div className="w-full h-44 rounded-2xl overflow-hidden mb-4 mx-auto">
           <Image
@@ -30,7 +30,7 @@ export default function Page() {
 
           <p className="text-gray-500 text-sm mb-2">Sub Heading</p>
 
-          <p className="text-sm text-gray-400 mb-4">
+          <p className="text-sm text-gray-500 mb-4">
             Lorem Ipsum is simply dummy text of they printing and typesetting industry. Loremel Ipsum has been the industry’s standards
           </p>
 
@@ -41,9 +41,9 @@ export default function Page() {
             <FaTiktok className="text-black" />
           </div>
 
-          <div className="flex justify-between items-center pt-2 border-t mt-2">
+          <div className="flex justify-between items-center pt-4 border-t mt-4">
             <span className="text-lg font-bold text-black">USD 3</span>
-            <button className="bg-blue-600 text-white font-bold px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-200">
+            <button className="bg-blue-600 text-white font-bold px-9 py-2 rounded-lg hover:bg-blue-700">
               Activate
             </button>
           </div>
