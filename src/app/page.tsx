@@ -30,7 +30,7 @@ export default function Page() {
 
           <p className="text-gray-500 text-sm mb-2">Sub Heading</p>
 
-          <p className="text-sm text-gray-600 mb-4">
+          <p className="text-sm text-gray-400 mb-4">
             Lorem Ipsum is simply dummy text of they printing and typesetting industry. Loremel Ipsum has been the industry’s standards
           </p>
 
